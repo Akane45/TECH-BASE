@@ -28,7 +28,7 @@ $result = $pdo -> query($sql);
 foreach ($result as $row){
   }
 
-//新規投稿
+//【新規投稿機能】
 if(isset($_POST["name"],$_POST["comment"],$_POST["password"])){
 $name = $_POST["name"];
 $comment = $_POST["comment"];
@@ -52,7 +52,7 @@ $pass = $_POST["password"];
     $sql -> execute();
     }
   }else{
-  //編集書き込み機能
+  //【編集書き込み機能】
   $id = $_POST["edit_No"];
   $name = $_POST["name"];
   $comment = $_POST["comment"];
@@ -87,7 +87,7 @@ $pass = $_POST["password"];
 }
 }//投稿終了
 
-//削除機能
+//【削除機能】
 if(isset($_POST["delete"])){
 $id = $_POST["delete"];//削除したい番号
 $pass = $_POST["del_password"];
