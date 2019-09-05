@@ -208,9 +208,9 @@ $sql = 'SELECT * FROM tbmission5';
 $stmt = $pdo->query($sql);
 $results = $stmt->fetchAll();
 foreach ($results as $row){
-	//$rowの中にはテーブルのカラム名が入る
-	echo $row['id'].',';
-	echo $row['name'].',';
+//$rowの中にはテーブルのカラム名が入る
+  echo $row['id'].',';
+  echo $row['name'].',';
   echo $row['comment'].',';
   echo $row['time'].'<br>';
   echo "<hr>";
